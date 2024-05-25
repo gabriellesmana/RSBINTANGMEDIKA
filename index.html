@@ -21,7 +21,6 @@
 
 
 <body>
-
  <!-- Image and text -->
 
  <!-- BAGIAN NAVBAR ATAS -->
@@ -199,7 +198,11 @@
     }
 </script>
 
+<div id="overlay">
+  <p>Maaf, perangkat Anda tidak mendukung. Harap gunakan PC/Laptop untuk pengalaman terbaik.</p>
+</div>
 <script>
+
   // Function to check if device is desktop
   function isDesktop() {
     return !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
@@ -208,25 +211,14 @@
   // Function to display warning message if not desktop
   function showDeviceWarning() {
     if (!isDesktop()) {
-      // Create a warning element
-      var warning = document.createElement('div');
-      warning.innerHTML = '<p>Device tidak mendukung. Harap gunakan PC/Laptop untuk pengalaman terbaik.</p>';
-      // Style the warning
-      warning.style.position = 'fixed';
-      warning.style.top = '50%';
-      warning.style.left = '50%';
-      warning.style.transform = 'translate(-50%, -50%)';
-      warning.style.background = 'rgba(255, 0, 0, 0.8)';
-      warning.style.color = '#fff';
-      warning.style.padding = '20px';
-      warning.style.borderRadius = '10px';
-      warning.style.zIndex = '9999';
-      // Append warning to body
-      document.body.appendChild(warning);
+      // Menyembunyikan konten utama
+      document.getElementById('content').style.display = 'none';
+      // Menampilkan overlay dengan pesan peringatan
+      document.getElementById('overlay').style.display = 'block';
     }
   }
 
-  // Call the function to show warning when the page loads
+  // Memanggil fungsi untuk menampilkan pesan peringatan saat halaman dimuat
   showDeviceWarning();
 </script>
 
