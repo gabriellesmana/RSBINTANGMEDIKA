@@ -1,0 +1,21 @@
+/* style.css */
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form-label,
+  .form-control {
+    width: 100%;
+  }
+  
+  /* Mengatur ukuran font agar lebih kecil */
+  .form-label {
+    font-size: 0.9rem;
+  }
+  
+  .form-control {
+    font-size: 0.8rem;
+  }
+  
