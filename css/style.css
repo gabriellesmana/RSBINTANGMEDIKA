@@ -1,0 +1,152 @@
+body {
+  overflow: hidden;
+  overflow-x: hidden;
+  max-height: 400px; /* Adjust the height as needed */
+  overflow-y: auto;
+  padding-top: 56px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-left: 250px; /* Lebar navbar samping */
+  }
+}
+
+
+
+    /* Sidebar */
+    .side-navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 1000;
+      width: 250px;
+      background-color: aqua; /* Adjust color as needed */
+      padding-top: 3.5rem;
+    }
+    .side-navbar .navbar-brand {
+      color: #fff;
+    }
+    .side-navbar ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .side-navbar ul li {
+      padding: 0.5rem;
+    }
+    .side-navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .side-navbar ul li a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .side-navbar li {
+      margin-left: 10px;
+    }
+
+.navbar img {
+  margin-left: 10px;
+}
+
+
+
+.dash h1 {
+  margin-left: 100px;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.dash span {
+  font-size: 15px;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+/* BAGIAN CARD */
+#card {
+  margin-left: 100px;
+  margin-top: 30px;
+  width: 525px;
+  height: 200px;
+  background-color: rgb(0, 89, 253);
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#card1 {
+  margin-top: 30px;
+  width: 525px;
+  height: 200px;
+  background-color: coral;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#card2 {
+  margin-left: 100px;
+  margin-top: 20px;
+  width: 525px;
+  height: 200px;
+  background-color: limegreen;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#card3 {
+  margin-top: 20px;
+  width: 525px;
+  height: 200px;
+  background-color: orange;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#card h5 {
+  margin-top: 10px;
+  font-family:"Poppins", sans-serif ;
+  color: white;
+}
+
+#card1 h5 {
+  margin-top: 10px;
+  font-family:"Poppins", sans-serif ;
+  color: white;
+}
+
+#card2 h5 {
+  font-family:"Poppins", sans-serif ;
+  color: white;
+}
+
+#card3 h5 {
+  font-family:"Poppins", sans-serif ;
+  color: white;
+}
+
+/* AKHIR BAGIAN CARD */
+
+#tabel {
+  margin-top: 20px;
+  width: 1070px;
+  margin-left: 100px;
+}
+
+.table {
+  margin-top: 10px;
+  padding-left: 8px; /* Ubah sesuai dengan kebutuhan */
+  padding-right: 8px; /* Ubah sesuai dengan kebutuhan */
+}
+
+#box h1{
+  text-align: center;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
