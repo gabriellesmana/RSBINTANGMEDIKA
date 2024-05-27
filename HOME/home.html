@@ -15,13 +15,15 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!-- CSS Bootstrap -->
   <link rel="stylesheet" href="style.css">
+  <!-- Custom CSS -->
+ 
 </head>
 
 <body>
  <!-- Image and text -->
 
  <!-- BAGIAN NAVBAR ATAS -->
-<nav class="navbar navbar-light bg-danger fixed-top">
+<nav class="navbar navbar-light fixed-top">
   <a class="navbar-brand" href="#">
     <img src="/img/WhatsApp_Image_2024-04-30_at_12.51.37_a6bfb413-removebg-preview.png" width="30" height="30" class="d-inline-block align-top" alt="">
     RS BINTANG MEDIKA
@@ -48,7 +50,7 @@
 
 
   <section>
-    <div class="row">
+    <div class="row main-content">
       <div class="col">
         <div class="dash">
           <h1>Dashboard <span>Versi 1.0</span></h1>
@@ -58,13 +60,13 @@
   </section>
 
   <!-- Konten utama -->
-  <div class="row">
+  <div class="row main-content">
     <div class="col-6">
       <div class="card" id="card">
         <div class="card-body">
           <h5 class="card-title">Buat Janji</h5>
           <p class="card-text">Silahkan janji dengan Dokter</p>
-          <a href="BUAT JANJI/buatjanji.html" class="btn btn-primary">Cek Disini</a>
+          <a href="/BUAT JANJI/buatjanji.html" class="btn btn-primary">Cek Disini</a>
         </div>
       </div>
     </div>
@@ -98,7 +100,7 @@
   </div>
   <!-- Akhir Konten utama -->
 
-  <div class="card mb-4" id="tabel">
+  <div class="card mb-4 main-content" id="tabel">
     <div class="card-header">
         <i class="fas fa-table me-1"></i>
         Jadwal Dokter RS Bintang Medika
@@ -177,9 +179,7 @@
             </table>
         </div>
     </div>
-</div>
-
-
+  </div>
 
   <!-- JS Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -187,17 +187,7 @@
     crossorigin="anonymous"></script>
   <!-- JS Bootstrap -->
 
-  <script>
-    if (!('scrollBehavior' in document.documentElement.style)) {
-      var script = document.createElement('script');
-      script.src = 'https://cdnjs.cloudflare.com/ajax/libs/iamdustan-smoothscroll/0.4.0/smoothscroll.min.js';
-      document.head.appendChild(script);
-    }
-</script>
-
-
 
 
 </body>
-
 </html>

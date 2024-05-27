@@ -1,37 +1,32 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- MY CSS -->
   <link rel="stylesheet" href="janji.css">
+  <!-- MY CSS -->
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+  <!-- GOOGLE FONT -->
 
   <title>Buat Janji</title>
 </head>
+
 <body>
   <div class="container" id="Formulir">
-    <h1 class="mt-5 mb-4 text-center">Form Pendaftaran Pasien</h1>
+    <h1 class=" text-center">Form Pendaftaran Pasien</h1>
     <form id="appointmentForm">
-      <div class="mb-3">
-        <label for="nama" class="form-label">Nama</label>
-        <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama" required>
-      </div>
-      <div class="mb-3">
-        <label for="umur" class="form-label">Umur</label>
-        <input type="number" class="form-control" id="umur" placeholder="Masukkan Umur" required>
-      </div>
-      <div class="mb-3">
-        <label for="alamat" class="form-label">Alamat</label>
-        <textarea class="form-control" id="alamat" rows="3" placeholder="Masukkan Alamat" required></textarea>
-      </div>
-      <div class="mb-3">
-        <label for="nomor-hp" class="form-label">Nomor HP</label>
-        <input type="tel" class="form-control" id="nomor-hp" placeholder="Masukkan Nomor HP" required>
-      </div>
       <div class="mb-3">
         <label for="tanggal" class="form-label">Tanggal Janji</label>
         <input type="date" class="form-control" id="tanggal" required>
@@ -40,9 +35,9 @@
         <label for="dokter" class="form-label">Pilih Dokter</label>
         <select class="form-select" id="dokter" required>
           <option value="">Pilih Dokter</option>
-          <option value="a">Dokter A</option>
-          <option value="b">Dokter B</option>
-          <option value="c">Dokter C</option>
+          <option value="Dokter A">Dokter A</option>
+          <option value="Dokter B">Dokter B</option>
+          <option value="Dokter C">Dokter C</option>
         </select>
       </div>
       <div class="mb-3">
@@ -52,6 +47,78 @@
         </select>
       </div>
       <div class="mb-3">
+        <label for="nama" class="form-label">Nama Lengkap</label>
+        <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama Lengkap" required>
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <label for="tempat-lahir" class="form-label">Tempat Lahir</label>
+          <input type="text" class="form-control" id="tempat-lahir" placeholder="Masukkan Tempat Lahir" required>
+        </div>
+        <div class="col">
+          <label for="tanggal-lahir" class="form-label">Tanggal Lahir</label>
+          <input type="date" class="form-control" id="tanggal-lahir" required>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <label for="agama" class="form-label">Agama</label>
+          <input type="text" class="form-control" id="agama" placeholder="Masukkan Agama" required>
+        </div>
+        <div class="col">
+          <label for="jenis-kelamin" class="form-label">Jenis Kelamin</label>
+          <select class="form-select" id="jenis-kelamin" required>
+            <option value="">Pilih Jenis Kelamin</option>
+            <option value="laki-laki">Laki-laki</option>
+            <option value="perempuan">Perempuan</option>
+          </select>
+        </div>
+        <div class="col">
+          <label for="golongan-darah" class="form-label">Golongan Darah</label>
+          <input type="text" class="form-control" id="golongan-darah" placeholder="Masukkan Golongan Darah" required>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="nomor-ktp" class="form-label">Nomor KTP</label>
+        <input type="text" class="form-control" id="nomor-ktp" placeholder="Masukkan Nomor KTP" required>
+      </div>
+      <div class="mb-3">
+        <label for="alamat" class="form-label">Alamat Lengkap</label>
+        <textarea class="form-control" id="alamat" rows="3" placeholder="Masukkan Alamat Lengkap" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="nomor-hp" class="form-label">Nomor HP</label>
+        <input type="tel" class="form-control" id="nomor-hp" placeholder="Masukkan Nomor HP" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Masukkan Email" required>
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <label for="status-pernikahan" class="form-label">Status Pernikahan</label>
+          <input type="text" class="form-control" id="status-pernikahan" placeholder="Masukkan Status Pernikahan"
+            required>
+        </div>
+        <div class="col">
+          <label for="kontak-darurat-nama" class="form-label">Nama Kontak Darurat</label>
+          <input type="text" class="form-control" id="kontak-darurat-nama" placeholder="Masukkan Nama Kontak Darurat"
+            required>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <label for="kontak-darurat-nomor-hp" class="form-label">Nomor HP Kontak Darurat</label>
+          <input type="tel" class="form-control" id="kontak-darurat-nomor-hp"
+            placeholder="Masukkan Nomor HP Kontak Darurat" required>
+        </div>
+        <div class="col">
+          <label for="kontak-darurat-alamat" class="form-label">Alamat Kontak Darurat</label>
+          <textarea class="form-control" id="kontak-darurat-alamat" rows="3"
+            placeholder="Masukkan Alamat Kontak Darurat" required></textarea>
+        </div>
+      </div>
+      <div class="mb-3">
         <label for="keluhan" class="form-label">Keluhan</label>
         <textarea class="form-control" id="keluhan" rows="3" placeholder="Masukkan Keluhan" required></textarea>
       </div>
@@ -59,29 +126,109 @@
     </form>
   </div>
 
-  <!-- Area untuk tiket yang akan dicetak -->
-  <div class="container mt-5" id="tiketArea" style="display:none;">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Tiket Janji Temu</h5>
-        <p class="card-text" id="tiketNomorAntrian"></p>
-        <p class="card-text" id="tiketNama"></p>
-        <p class="card-text" id="tiketUmur"></p>
-        <p class="card-text" id="tiketAlamat"></p>
-        <p class="card-text" id="tiketNomorHp"></p>
-        <p class="card-text" id="tiketTanggal"></p>
-        <p class="card-text" id="tiketDokter"></p>
-        <p class="card-text" id="tiketJam"></p>
-        <p class="card-text" id="tiketKeluhan"></p>
+  <!-- Modal Tiket Antrian -->
+  <div class="modal fade" id="tiketAntrianModal" tabindex="-1" aria-labelledby="tiketAntrianModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="tiketAntrianModalLabel">Tiket Antrian</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ticket">
+            <div class="ticket-header">
+              <img src="/img/WhatsApp_Image_2024-04-30_at_12.51.37_a6bfb413-removebg-preview.png" alt="Hospital Logo"
+                class="hospital-logo">
+              <h4 class="hospital-name">RS BINTANG MEDIKA</h4>
+              <p class="hospital-address">JL. Ir.Sutami Purwodadi simpang Kecamatan Tajung Bintang Kabupaten Lampung
+                Selatan Provinsi Lampung 35361</p>
+              <p class="hospital-phone">(021) Contoh</p>
+            </div>
+            <p class="nomor-antrian">Nomor Antrian Anda :</p>
+            <div class="antrian-box">
+              <p id="nomorAntrian" class="antrian-number">AN001</p>
+            </div>
+            <p class="note">SILAHKAN MENUNGGU NOMOR ANTRIAN DIPANGGIL<br>NOMOR INI HANYA BERLAKU PADA HARI
+              DICETAK<br><span id="tanggalCetak"></span></p>
+            <p class="terimakasih">TERIMAKASIH ANDA TELAH TERTIB</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-keluar" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary btn-print" onclick="printTiket()">Print</button>
+        </div>
       </div>
     </div>
-    <button class="btn btn-secondary mt-3 print-button" onclick="printTicket()">Cetak Tiket</button>
   </div>
 
-  <!-- Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- Modal Custom Alert -->
+  <div class="modal fade" id="customAlertModal" tabindex="-1" aria-labelledby="customAlertModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="customAlertModalLabel">Peringatan</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ticket-header">
+            <img src="hospital_logo.png" alt="Hospital Logo" class="hospital-logo">
+            <h4 class="modal-title" id="tiketAntrianModalLabel">RS BINTANG MEDIKA</h4>
+          </div>
+          <p>Dokter: <span id="tiketDokter"></span></p>
+          <p>Nomor Antrian: <span id="nomorAntrian"></span></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <!-- Link to external JavaScript file -->
-  <script src="buatjanji.js"></script>
+
+
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- JavaScript -->
+  <script>
+    function submitForm() {
+      const dokter = document.getElementById('dokter').value;
+      const nomorAntrian = parseInt(localStorage.getItem('nomorAntrian')) || 0; // Get nomor antrian from localStorage or default to 0
+
+      if (dokter) {
+        // Increase nomor antrian by 1 and save it back to localStorage
+        localStorage.setItem('nomorAntrian', nomorAntrian + 1);
+
+        document.getElementById('tiketDokter').innerText = dokter;
+        document.getElementById('nomorAntrian').innerText = nomorAntrian + 1;
+
+        var myModal = new bootstrap.Modal(document.getElementById('tiketAntrianModal'));
+        myModal.show();
+      } else {
+        // Custom alert message
+        document.getElementById('customAlertMessage').innerText = 'Pilih dokter terlebih dahulu!';
+        var customAlertModal = new bootstrap.Modal(document.getElementById('customAlertModal'));
+        customAlertModal.show();
+      }
+    }
+
+    function printTiket() {
+      var printContents = document.getElementById('tiketAntrianModal').innerHTML;
+      var originalContents = document.body.innerHTML;
+
+      document.body.innerHTML = printContents;
+
+      window.print();
+
+      document.body.innerHTML = originalContents;
+      window.location.reload(); // Optional: Reload the page to reset the form
+    }
+  </script>
 </body>
+
 </html>

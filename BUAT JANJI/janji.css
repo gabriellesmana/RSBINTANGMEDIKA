@@ -1,8 +1,19 @@
+body {
+  background-color: #69FBF8;
+  font-family: "Reddit Sans", sans-serif; /* Mengatur font global */
+}
+
+/* TOMBOL PAS CETAK TIKET */
 @media print {
-  .print-button {
+  header, footer, .btn-print, .btn-keluar {
     display: none !important;
   }
 }
+
+/* .btn-close span.visually-hidden {
+  visibility: hidden;
+} */
+/* TOMBOL PAS CETAK TIKET */
 
 #Formulir {
   background-color: rgba(255, 255, 255, 0.8);
@@ -10,15 +21,112 @@
   padding: 40px;
   border-radius: 10px;
   max-width: 500px; /* Mengatur lebar maksimal dengan jarak kiri-kanan 20px */
-  margin: 0 auto; /* Mengatur tengah secara horizontal */
+  margin: 40px auto; /* Mengatur tengah secara horizontal dan memberikan jarak atas dan bawah */
   /* text-align: center; */
+  font-family: "Reddit Sans", sans-serif; /* Mengatur font untuk #Formulir */
 }
 
 #Formulir h1 {
   text-align: center;
-  font-family: 'Overpass', sans-serif;
+  font-family: "Reddit Sans", sans-serif;
   font-size: 35px;
-  margin-top: 25px;
+  margin-top: 5px;
   margin-bottom: 50px;
   color: #333;
+}
+
+/* styles.css */
+.ticket {
+  border: 3px solid #000;
+  padding: 20px;
+  text-align: center;
+  font-family: "Reddit Sans", sans-serif;
+}
+
+.ticket-header {
+  margin-bottom: 20px;
+}
+
+.hospital-logo {
+  max-width: 60px;
+}
+
+.hospital-name {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Reddit Sans", sans-serif;
+}
+
+.hospital-address,
+.hospital-phone {
+  margin: 0;
+  font-size: 12px;
+  font-family: "Reddit Sans", sans-serif;
+}
+
+.nomor-antrian {
+  font-size: 16px;
+  font-family: "Reddit Sans", sans-serif;
+}
+
+.antrian-box {
+  border: 3px solid #000;
+  padding: 10px;
+  margin: 10px 0;
+  font-family: "Reddit Sans", sans-serif;
+}
+
+.antrian-number {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  font-family: "Reddit Sans", sans-serif;
+}
+
+.note {
+  font-size: 10px;
+  margin: 10px 0;
+  font-family: "Reddit Sans", sans-serif;
+}
+
+.terimakasih {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 20px 0 0 0;
+  font-family: "Reddit Sans", sans-serif;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4285F4; /* Warna Biru */
+  font-family: "Reddit Sans", sans-serif;
+}
+
+.modal-body {
+  background-color: #F8F9FA; /* Warna abu-abu muda */
+  padding: 20px;
+  border-radius: 10px;
+  font-family: "Reddit Sans", sans-serif;
+}
+
+.modal-footer {
+  justify-content: space-between;
+  font-family: "Reddit Sans", sans-serif;
+}
+
+.btn-keluar {
+  background-color: #DC3545; /* Warna Merah */
+  font-family: "Reddit Sans", sans-serif;
+}
+
+.btn-print {
+  background-color: #0D6EFD; /* Warna Biru Tua */
+  font-family: "Reddit Sans", sans-serif;
+}
+
+.btn-keluar, .btn-print {
+  color: white;
+  font-family: "Reddit Sans", sans-serif;
 }

@@ -1,6 +1,6 @@
 body {
-    background: linear-gradient(rgba(52, 152, 219, 0.8), rgba(52, 152, 219, 0.8)), 
-    url(src/img/desktop1.jpg);
+    background-color: #69FBF8;
+    /* url(src/img/desktop1.jpg); */
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -72,8 +72,8 @@ body {
 .btn-primary {
     width: 100%;
     font-size: 18px; /* Sesuaikan dengan nilai yang diinginkan dalam pixel */
-    background-color: #3498db;
-    border-color: #3498db;
+    background-color: #69FBF8;
+    border-color: #69FBF8;
 }
 
 .btn-primary:hover {

@@ -12,7 +12,14 @@ body {
   }
 }
 
+.navbar {
+  background-color: #69FBF8;
+}
 
+.navbar a {
+  font-size: large;
+  font-weight: bold;
+}
 
     /* Sidebar */
     .side-navbar {
@@ -22,9 +29,10 @@ body {
       bottom: 0;
       z-index: 1000;
       width: 250px;
-      background-color: aqua; /* Adjust color as needed */
+      background-color: #69FBF8; /* Adjust color as needed */
       padding-top: 3.5rem;
     }
+
     .side-navbar .navbar-brand {
       color: #fff;
     }
@@ -43,6 +51,13 @@ body {
       color: #fff;
       text-decoration: underline;
     }
+
+    .navbar-nav .nav-link {
+      color: black !important;
+      font-size: large;
+      font-weight: bold;
+  }
+  
 
     .side-navbar li {
       margin-left: 10px;
@@ -150,17 +165,4 @@ html {
   scroll-behavior: smooth;
 }
 
-#overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9999;
-  color: white;
-  font-size: 24px;
-  text-align: center;
-  padding-top: 20%;
-}
+
