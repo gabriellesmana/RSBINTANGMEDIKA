@@ -1,7 +1,5 @@
 
 
-
-
 // BARU //
 
 // document.getElementById('tanggal').addEventListener('change', function() {

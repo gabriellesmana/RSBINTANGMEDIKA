@@ -1,31 +1,22 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- MY CSS -->
   <link rel="stylesheet" href="janji.css">
-  <!-- MY CSS -->
-
   <!-- GOOGLE FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
-    rel="stylesheet">
-  <!-- GOOGLE FONT -->
-
+  <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   <title>Buat Janji</title>
 </head>
-
 <body>
   <div class="container" id="Formulir">
-    <h1 class=" text-center">Form Pendaftaran Pasien</h1>
+    <h1 class="text-center">Form Pendaftaran Pasien</h1>
     <form id="appointmentForm">
       <div class="mb-3">
         <label for="tanggal" class="form-label">Tanggal Janji</label>
@@ -43,7 +34,7 @@
       <div class="mb-3">
         <label for="jam" class="form-label">Jam Bertemu Dokter</label>
         <select class="form-select" id="jam" required>
-          <!-- Jam bertemu dokter akan ditambahkan setelah memilih tanggal dan dokter -->
+          <!-- Jam bertemu dokter akan ditambahkan setelah memilih dokter -->
         </select>
       </div>
       <div class="mb-3">
@@ -97,25 +88,21 @@
       <div class="row mb-3">
         <div class="col">
           <label for="status-pernikahan" class="form-label">Status Pernikahan</label>
-          <input type="text" class="form-control" id="status-pernikahan" placeholder="Masukkan Status Pernikahan"
-            required>
+          <input type="text" class="form-control" id="status-pernikahan" placeholder="Masukkan Status Pernikahan" required>
         </div>
         <div class="col">
           <label for="kontak-darurat-nama" class="form-label">Nama Kontak Darurat</label>
-          <input type="text" class="form-control" id="kontak-darurat-nama" placeholder="Masukkan Nama Kontak Darurat"
-            required>
+          <input type="text" class="form-control" id="kontak-darurat-nama" placeholder="Masukkan Nama Kontak Darurat" required>
         </div>
       </div>
       <div class="row mb-3">
         <div class="col">
           <label for="kontak-darurat-nomor-hp" class="form-label">Nomor HP Kontak Darurat</label>
-          <input type="tel" class="form-control" id="kontak-darurat-nomor-hp"
-            placeholder="Masukkan Nomor HP Kontak Darurat" required>
+          <input type="tel" class="form-control" id="kontak-darurat-nomor-hp" placeholder="Masukkan Nomor HP Kontak Darurat" required>
         </div>
         <div class="col">
           <label for="kontak-darurat-alamat" class="form-label">Alamat Kontak Darurat</label>
-          <textarea class="form-control" id="kontak-darurat-alamat" rows="3"
-            placeholder="Masukkan Alamat Kontak Darurat" required></textarea>
+          <textarea class="form-control" id="kontak-darurat-alamat" rows="3" placeholder="Masukkan Alamat Kontak Darurat" required></textarea>
         </div>
       </div>
       <div class="mb-3">
@@ -125,10 +112,8 @@
       <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
     </form>
   </div>
-
   <!-- Modal Tiket Antrian -->
-  <div class="modal fade" id="tiketAntrianModal" tabindex="-1" aria-labelledby="tiketAntrianModalLabel"
-    aria-hidden="true">
+  <div class="modal fade" id="tiketAntrianModal" tabindex="-1" aria-labelledby="tiketAntrianModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -138,19 +123,16 @@
         <div class="modal-body">
           <div class="ticket">
             <div class="ticket-header">
-              <img src="/img/WhatsApp_Image_2024-04-30_at_12.51.37_a6bfb413-removebg-preview.png" alt="Hospital Logo"
-                class="hospital-logo">
+              <img src="/img/WhatsApp_Image_2024-04-30_at_12.51.37_a6bfb413-removebg-preview.png" alt="Hospital Logo" class="hospital-logo">
               <h4 class="hospital-name">RS BINTANG MEDIKA</h4>
-              <p class="hospital-address">JL. Ir.Sutami Purwodadi simpang Kecamatan Tajung Bintang Kabupaten Lampung
-                Selatan Provinsi Lampung 35361</p>
+              <p class="hospital-address">JL. Ir.Sutami Purwodadi simpang Kecamatan Tajung Bintang Kabupaten Lampung Selatan Provinsi Lampung 35361</p>
               <p class="hospital-phone">(021) Contoh</p>
             </div>
             <p class="nomor-antrian">Nomor Antrian Anda :</p>
             <div class="antrian-box">
               <p id="nomorAntrian" class="antrian-number">AN001</p>
             </div>
-            <p class="note">SILAHKAN MENUNGGU NOMOR ANTRIAN DIPANGGIL<br>NOMOR INI HANYA BERLAKU PADA HARI
-              DICETAK<br><span id="tanggalCetak"></span></p>
+            <p class="note">SILAHKAN MENUNGGU NOMOR ANTRIAN DIPANGGIL<br>NOMOR INI HANYA BERLAKU PADA HARI DICETAK<br><span id="tanggalCetak"></span></p>
             <p class="terimakasih">TERIMAKASIH ANDA TELAH TERTIB</p>
           </div>
         </div>
@@ -161,10 +143,8 @@
       </div>
     </div>
   </div>
-
   <!-- Modal Custom Alert -->
-  <div class="modal fade" id="customAlertModal" tabindex="-1" aria-labelledby="customAlertModalLabel"
-    aria-hidden="true">
+  <div class="modal fade" id="customAlertModal" tabindex="-1" aria-labelledby="customAlertModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -173,11 +153,10 @@
         </div>
         <div class="modal-body">
           <div class="ticket-header">
-            <img src="hospital_logo.png" alt="Hospital Logo" class="hospital-logo">
+            <img src="/img/WhatsApp_Image_2024-04-30_at_12.51.37_a6bfb413-removebg-preview.png" alt="Hospital Logo" class="hospital-logo">
             <h4 class="modal-title" id="tiketAntrianModalLabel">RS BINTANG MEDIKA</h4>
           </div>
-          <p>Dokter: <span id="tiketDokter"></span></p>
-          <p>Nomor Antrian: <span id="nomorAntrian"></span></p>
+          <p id="alertMessage">Dokter: <span id="tiketDokter"></span></p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -185,33 +164,67 @@
       </div>
     </div>
   </div>
-
-
-
-
   <!-- Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <!-- JavaScript -->
   <script>
-    function submitForm() {
-      const dokter = document.getElementById('dokter').value;
-      const nomorAntrian = parseInt(localStorage.getItem('nomorAntrian')) || 0; // Get nomor antrian from localStorage or default to 0
+    const jamBertemu = {
+      "Dokter A": ["08:00 - 09:00", "09:00 - 10:00", "10:00 - 11:00"],
+      "Dokter B": ["11:00 - 12:00", "12:00 - 13:00", "13:00 - 14:00"],
+      "Dokter C": ["14:00 - 15:00", "15:00 - 16:00", "16:00 - 17:00"]
+    };
+
+    document.getElementById('dokter').addEventListener('change', function() {
+      const dokter = this.value;
+      const jamSelect = document.getElementById('jam');
+      jamSelect.innerHTML = ''; // Kosongkan pilihan jam
 
       if (dokter) {
-        // Increase nomor antrian by 1 and save it back to localStorage
-        localStorage.setItem('nomorAntrian', nomorAntrian + 1);
+        jamBertemu[dokter].forEach(function(jam) {
+          const option = document.createElement('option');
+          option.value = jam;
+          option.textContent = jam;
+          jamSelect.appendChild(option);
+        });
+      }
+    });
 
-        document.getElementById('tiketDokter').innerText = dokter;
-        document.getElementById('nomorAntrian').innerText = nomorAntrian + 1;
+    function getNextAntrian(dokter, tanggal) {
+      const dokterKey = `antrian_${dokter}_${tanggal}`;
+      const nomorAntrian = parseInt(localStorage.getItem(dokterKey)) || 0;
 
-        var myModal = new bootstrap.Modal(document.getElementById('tiketAntrianModal'));
-        myModal.show();
+      if (nomorAntrian >= 5) {
+        return null; // Batas antrian sudah tercapai
+      }
+
+      const prefix = dokter === 'Dokter A' ? 'AN' : dokter === 'Dokter B' ? 'BN' : 'CN';
+      const newNomorAntrian = nomorAntrian + 1;
+      localStorage.setItem(dokterKey, newNomorAntrian);
+      return `${prefix}${newNomorAntrian}`;
+    }
+
+    function submitForm() {
+      const dokter = document.getElementById('dokter').value;
+      const jam = document.getElementById('jam').value;
+      const tanggal = document.getElementById('tanggal').value;
+
+      if (dokter && jam && tanggal) {
+        const nomorAntrian = getNextAntrian(dokter, tanggal);
+
+        if (nomorAntrian) {
+          document.getElementById('tiketDokter').innerText = dokter;
+          document.getElementById('nomorAntrian').innerText = nomorAntrian;
+          document.getElementById('tanggalCetak').innerText = new Date(tanggal).toLocaleDateString();
+
+          var myModal = new bootstrap.Modal(document.getElementById('tiketAntrianModal'));
+          myModal.show();
+        } else {
+          document.getElementById('alertMessage').innerText = `Antrian untuk ${dokter} pada tanggal ${tanggal} sudah penuh.`;
+          var customAlertModal = new bootstrap.Modal(document.getElementById('customAlertModal'));
+          customAlertModal.show();
+        }
       } else {
-        // Custom alert message
-        document.getElementById('customAlertMessage').innerText = 'Pilih dokter terlebih dahulu!';
+        document.getElementById('alertMessage').innerText = 'Harap pilih Dokter, Jam, dan Tanggal yang valid.';
         var customAlertModal = new bootstrap.Modal(document.getElementById('customAlertModal'));
         customAlertModal.show();
       }
@@ -230,5 +243,4 @@
     }
   </script>
 </body>
-
 </html>
